@@ -77,6 +77,12 @@ console.log(getVowels("Hello world"));
 	•	Crea una funzione che accetti un array di numeri e restituisca il risultato della moltiplicazione di tutti i numeri nell’array.
 	•	Esempio: Con [1, 2, 3, 4], la funzione dovrebbe restituire 24.*/
 
+const multiplyNums = (arreyOfNum) => {
+  return arreyOfNum.reduce((acc, item) => {
+    return acc * item;
+  }, 1);
+};
+console.log(multiplyNums(numberArray));
 /* 8. Parola Più Lunga
 
 	•	Scrivi una funzione che prenda una frase (stringa) e restituisca la parola più lunga presente. Se ci sono più parole con la stessa lunghezza massima, puoi restituire una di esse.
