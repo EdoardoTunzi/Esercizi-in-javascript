@@ -87,6 +87,23 @@ console.log(multiplyNums(numberArray));
 
 	•	Scrivi una funzione che prenda una frase (stringa) e restituisca la parola più lunga presente. Se ci sono più parole con la stessa lunghezza massima, puoi restituire una di esse.
 	•	Esempio: Con "Questa è una frase di esempio", la funzione dovrebbe restituire "esempio".*/
+const getLongestWord = (string) => {
+  const stringArr = string.split(" ");
+  let charCount = 0;
+  let longestWord = "";
+
+  for (let i = 0; i < stringArr.length; i++) {
+    const wordLenght = stringArr[i].length;
+
+    if (wordLenght > charCount) {
+      charCount = wordLenght;
+      longestWord = stringArr[i];
+    }
+  }
+  return longestWord;
+};
+
+console.log(getLongestWord("Questa è una frase di esempio supercalifragilisti"));
 
 /* 9. Filtro dei Numeri Primi
 
