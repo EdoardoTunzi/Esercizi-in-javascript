@@ -53,3 +53,41 @@ const checkIfPalindrome = (string) => {
   }
 };
 console.log(checkIfPalindrome("tenet"));
+
+/* 6. Conteggio delle Vocali
+
+	•	Scrivi una funzione che prenda una stringa e conti quante vocali contiene. Le vocali sono "a", "e", "i", "o", "u" (sia maiuscole che minuscole).
+	•	Esempio: Con "Hello World", la funzione dovrebbe restituire 3.*/
+
+const getVowels = (string) => {
+  let str1 = string.toLowerCase().split("");
+  let vowelCount = 0;
+  for (let i = 0; i < str1.length; i++) {
+    if (str1[i] == "a" || str1[i] == "e" || str1[i] == "i" || str1[i] == "o" || str1[i] == "u") {
+      vowelCount += 1;
+    }
+  }
+  return vowelCount;
+};
+
+console.log(getVowels("Hello world"));
+
+/* 7. Moltiplicazione di Numeri in un Array
+
+	•	Crea una funzione che accetti un array di numeri e restituisca il risultato della moltiplicazione di tutti i numeri nell’array.
+	•	Esempio: Con [1, 2, 3, 4], la funzione dovrebbe restituire 24.*/
+
+/* 8. Parola Più Lunga
+
+	•	Scrivi una funzione che prenda una frase (stringa) e restituisca la parola più lunga presente. Se ci sono più parole con la stessa lunghezza massima, puoi restituire una di esse.
+	•	Esempio: Con "Questa è una frase di esempio", la funzione dovrebbe restituire "esempio".*/
+
+/* 9. Filtro dei Numeri Primi
+
+	•	Crea una funzione che accetti un array di numeri e ritorni un nuovo array contenente solo i numeri primi.
+	•	Esempio: Con [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], la funzione dovrebbe restituire [2, 3, 5, 7].*/
+
+/* 10. Rimozione di Duplicati
+
+	•	Scrivi una funzione che accetti un array e rimuova i duplicati, restituendo un nuovo array contenente solo elementi unici.
+	•	Esempio: Con [1, 2, 2, 3, 4, 4, 5], la funzione dovrebbe restituire [1, 2, 3, 4, 5].*/
